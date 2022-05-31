@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+  learn-docker-dev:
+    build:
+      context: './deployments/runtime'
+    working_dir: '/var/app'
+    container_name: learn-docker
+    ports:
+      - target: 80
+        published: ${APP_PORT}
+        protocol: tcp
+        mode: host
+    volumes:
+      - '.:/var/app:cached'
+      - './deployments/runtime/php-ext-custom.ini:/usr/local/etc/php/conf.d/php-ext-custom.ini:cached'
+
+    restart: unless-stopped
