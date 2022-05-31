@@ -36,6 +36,19 @@ RUN cd /tmp \
 # Copy virtual host file
 COPY 000-default.conf /etc/apache2/sites-available/
 
+# Install built-in extensions
+RUN docker-php-ext-install \
+    mysqli \
+    pdo_mysql \
+    sockets \
+    opcache \
+    bcmath \
+    iconv \
+    exif \
+    zip \
+    gd \
+    pdo
+
 # Copy fix permission script
 COPY setup-permission.sh /usr/local/bin/setup-permission
 RUN chmod +x /usr/local/bin/setup-permission
