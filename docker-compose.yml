@@ -16,17 +16,3 @@ services:
       - './deployments/runtime/php-ext-custom.ini:/usr/local/etc/php/conf.d/php-ext-custom.ini:cached'
 
     restart: unless-stopped
-
-  learn-mysql:
-    image: mysql:8.0.22
-    environment:
-      - MYSQL_ALLOW_EMPTY_PASSWORD=true
-    ports:
-      - "3309:3306"
-    restart: unless-stopped
-    volumes:
-      - mysqldata:/var/lib/mysql
-      - ./my.cnf:/etc/mysql/my.cnf
-
-volumes:
-  mysqldata:
