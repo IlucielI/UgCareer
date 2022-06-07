@@ -18,6 +18,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('css')
+
+    @stack('css-stack')
 </head>
 <body>
     <div id="app">
@@ -76,5 +79,8 @@
             @yield('content')
         </main>
     </div>
+    @yield('js')
+
+    @stack('js-stack')
 </body>
 </html>
