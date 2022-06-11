@@ -24,6 +24,16 @@ docker-compose exec learn-docker-dev bash -c "composer install"
 docker-compose exec learn-docker-dev bash -c "php artisan key:generate"
 ```
 
+## Npm Install
+```
+docker-compose exec learn-docker-dev bash -c "npm install"
+```
+
+## Npm Build
+```
+docker-compose exec learn-docker-dev bash -c "npm run dev"
+```
+
 ## Set DB Setting
 Changes your DB environment to your database settings on `.env` file
 ```
@@ -37,7 +47,7 @@ DB_PASSWORD=
 ## Run DB Migration
 Skip this step if you already have migration
 ```
-php artisan migrate
+docker-compose exec learn-docker-dev bash -c "php artisan migrate"
 ```
 
 ## Test
