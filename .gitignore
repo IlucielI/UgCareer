@@ -5,6 +5,7 @@ package.json
 /public/js
 /public/hot
 /public/storage
+/public/fonts/vendor
 /storage/*.key
 /vendor
 .env

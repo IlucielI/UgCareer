@@ -14,5 +14,10 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css');
 
-// mix.js(`resources/js/page/home.js`, `public/js`);
+mix.scripts([
+    'node_modules/jquery-validation/dist/jquery.validate.js',
+    'resources/js/jquery-form-validation.js',
+], `public/js/jquery-validate.js`);
+
+// mix.js(`resources/js/jquery-form-validation.js`, `public/js/plugins`);
 // mix.sass(`resources/sass/page/home.scss`, `public/css`);
