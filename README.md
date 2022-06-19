@@ -1,6 +1,6 @@
 # Installation Guide
 ## System Requirements laravel 7
-- PHP version: ^7.2
+- PHP version: ^7.4
 - Apache version: >=2.4.27
 - Composer version: >=1
 
