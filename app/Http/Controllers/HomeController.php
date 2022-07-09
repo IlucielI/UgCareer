@@ -23,10 +23,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('backend.pages.dashboard.index');
     }
-    public function index1()
+    public function homeadmin()
     {
-        return view('home1');
+        return view('backend.pages.dashboard.index');
     }
 }

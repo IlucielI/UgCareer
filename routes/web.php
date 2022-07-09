@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,5 +20,16 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/home1', 'HomeController@index1')->name('home1');
+// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/homeadmin', 'HomeController@homeadmin')->name('homeadmin');
+Route::resource('alumni', 'App\Http\Controllers\Backend\AlumniController', ['except' => ['show']]);
+Route::resource('company', 'App\Http\Controllers\Backend\CompanyController');
+Route::resource('kabkota', 'App\Http\Controllers\Backend\KabkotaController');
+Route::resource('prodi', 'App\Http\Controllers\Backend\ProdiController');
+Route::resource('certificates', 'App\Http\Controllers\Backend\CertificatesController');
+Route::resource('jobseekers', 'App\Http\Controllers\Backend\JobsController');
+Route::resource('events', 'App\Http\Controllers\Backend\EventsController');
+Route::resource('forums', 'App\Http\Controllers\Backend\ForumsController');
+Route::get('/profile/edit/{id}', 'App\Http\Controllers\Backend\ProfileController@edit')->name('profile.edit');
+Route::put('/profile/update', 'App\Http\Controllers\Backend\ProfileController@update')->name('profile.update');
+Route::put('/profile/password', 'App\Http\Controllers\Backend\ProfileController@password')->name('profile.password');
