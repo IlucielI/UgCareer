@@ -1397,3 +1397,61 @@ section {
 #footer .footer-links a:hover {
   color: #8a34db;
 }
+
+/* Certification page */
+.backPage{
+  color: #925FBA;
+}
+
+.jurusan ul li a:hover{
+  color: rgb(102, 102, 249);
+}
+/* 
+#css jurusan fikti 
+*/
+
+h5.fikti{
+  color:#925FBA;
+}
+
+ul.fikti li{
+  content: "\2022 ";
+  color: #925FBA; /* or whatever color you prefer */
+}
+
+ul.fikti li a{
+  color: black; /* or whatever color you prefer */
+}
+
+/* 
+#css jurusan fti
+*/
+
+h5.fti{
+  color:#72A6E2;
+}
+
+ul.fti li{
+  content: "\2022 ";
+  color: #72A6E2; /* or whatever color you prefer */
+}
+
+ul.fti li a{
+  color: black; /* or whatever color you prefer */
+}
+
+/* 
+#css jurusan fe (fakultas ekonomi)
+*/
+h5.fe{
+  color:#EEA754;
+}
+
+ul.fe li{
+  content: "\2022 ";
+  color: #EEA754; /* or whatever color you prefer */
+}
+
+ul.fe li a{
+  color: black; /* or whatever color you prefer */
+}

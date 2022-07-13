@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome1');
 });
 
+Route::get('/certification', function () {
+    return view('layouts.certification.index');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
