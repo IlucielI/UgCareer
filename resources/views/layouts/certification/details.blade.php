@@ -46,80 +46,60 @@
 @section('content')
     <div class="container">
         <main id="main" style="margin-top:100px;">
-            <a href="/" class="text-decoration-none backPage"><i class="bi bi-arrow-left-circle"></i> kembali ke
-                Home</a>
+            <a href="/certification" class="text-decoration-none backPage"><i class="bi bi-arrow-left-circle"></i> kembali
+                ke
+                Akreditasi</a>
         </main>
 
         <div class="row mt-4 mb-4">
-            <h4 class="fw-bold">Surat Keterangan Akreditasi (JENJANG PENDIDIKAN)</h4>
+            <h4 class="fw-bold">Surat Akreditasi S1 - Jurusan Sistem Informasi</h4>
         </div>
 
-        {{-- List Jurusan --}}
-        <div class="row mt-4 jurusan">
-            <div class="col-md-7">
-                <div class="card rounded mb-4 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold fikti">Fakultas Ilmu Komputer dan Teknologi
-                            Informasi
-                            (FIKTI)
-                        </h5>
-                        <hr>
-                        <p class="fw-bold fs-5">Jurusan</p>
-                        <ul class=fikti>
-                            <li><a href="certification/details" class="text-decoration-none">Sistem Informasi</a></li>
-                            <li><a href="#" class="text-decoration-none">Sistem Komputer</a></li>
-                        </ul>
+        <div class="row">
+            {{-- Preview Latest Acreditation Certificate --}}
+            <div class="col-md-8">
+                <div class="card mb-5">
+                    <div class="iframe-container">
+                        <iframe
+                            src="{{ asset('assets') }}/data_file/sertifikat_akreditasi_s1_sistem_informasi_2020-2025.pdf"
+                            frameborder="0" allowfullscreen></iframe>
                     </div>
-                </div>
-                <div class="card mb-4 shadow">
                     <div class="card-body">
-                        <h5 class="card-title fw-bold fti">Fakultas Teknologi Industri
-                            (FTI)
+                        <h4 class="card-title fw-bold">Terbaru <br>
+                        </h4>
+                        {{-- <div class="d-flex w-100">
+                            <p class="fw-bold card-title">
+                                Surat Keterangan Akreditasi S1 - Sistem Informasi 2020 - 2025
+                                <span><a href="#" class="btn text-white"
+                                        style="background-color: #925FBA;">Download</a></span>
+                            </p>
+                        </div> --}}
+                        <h5 class="fw-bold card-title">
+                            Surat Keterangan Akreditasi S1 - Sistem Informasi 2020 - 2025
                         </h5>
-                        <hr>
-                        <p class="fw-bold fs-5">Jurusan</p>
-                        <ul class="fti">
-                            <li><a href="#" class="text-decoration-none">Teknologi Informatika</a></li>
-                            <li><a href="#" class="text-decoration-none">Teknik Elektro</a></li>
-                            <li><a href="#" class="text-decoration-none">Teknik Industri</a></li>
-                            <li><a href="#" class="text-decoration-none">Teknik Mesin</a></li>
-                            <li><a href="#" class="text-decoration-none">Agroteknologi</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card mb-4 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold fe">Fakultas Ekonomi
-                            (FE)
-                        </h5>
-                        <hr>
-                        <p class="fw-bold fs-5">Jurusan</p>
-                        <ul class="fe">
-                            <li><a href="#" class="text-decoration-none">Manajemen</a></li>
-                            <li><a href="#" class="text-decoration-none">Akuntansi</a></li>
-                            <li><a href="#" class="text-decoration-none">Ekonomi Syariah</a></li>
-                        </ul>
+                        <div class="d-flex w-100 justify-content-end">
+                            <a href="#" class="btn text-white" style="background-color: #925FBA;">Download</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            {{-- End List Jurusan --}}
 
-            {{-- Search Bar Jurusan --}}
-            <div class="col-md-5">
+            {{-- oldest Acreditation Certification --}}
+            <div class="col-md-4">
                 <div class="card border-2">
                     <div class="card-body">
-                        <form action="#" method="get">
-                            @csrf
-                            <h5 class="fw-bold mb-3">Search</h5>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control">
-                                <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
-                            </div>
-                        </form>
+                        <p class="card-title fw-bold fs-5">Arsip</p>
+                        <ul class=fikti>
+                            <li><a href="#" class="text-decoration-none fw-bold">Surat Keterangan Akreditasi
+                                    S1 - Sistem Informasi 2015 - 2020</a></li>
+                            <li><a href="#" class="text-decoration-none fw-bold">Surat Keterangan Akreditasi
+                                    S1 - Sistem Informasi 2010 - 2015</a></li>
+                            <li><a href="#" class="text-decoration-none fw-bold">Surat Keterangan Akreditasi
+                                    S1 - Sistem Informasi 2005 - 2010</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            {{-- End Search Bar Jurusan --}}
         </div>
     </div>
 @endsection
@@ -276,5 +256,7 @@
             signupBtn.click();
             return false;
         });
+
+        // resize iframe
     </script>
 @endsection

@@ -61,14 +61,14 @@
                     <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif"
                             href="#contact">Contact</a></li>
                     <li class="dropdown"><a href="#"
-                            class="nav-link scrollto @if (Request::segment(1) == '' || Request::segment(1) == 'certification') active @endif"><span>About</span>
+                            class="nav-link scrollto @if (Request::segment(1) == 'certification') active @endif"><span>About</span>
                             <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#"
-                                    class="nav-link scrollto @if (Request::segment(1) == '') active @endif">Tracer
+                                    class="nav-link scrollto @if (Request::segment(1) == 'tracer') active @endif">Tracer
                                     Study</a></li>
                             <li><a href="/certification"
-                                    class="nav-link scrollto @if (Request::segment(1) == '' || Request::segment(1) == 'certification') active @endif">Certification
+                                    class="nav-link scrollto @if (Request::segment(1) == 'certification') active @endif">Certification
                                     Acreditations</a></li>
                         </ul>
                     </li>
@@ -141,6 +141,8 @@
     <script src="{{ asset('assets') }}/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="{{ asset('assets') }}/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="{{ asset('assets') }}/vendor/php-email-form/validate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
     @yield('optionaljs')
     <!-- Template Main JS File -->
     <script src="{{ asset('assets') }}/js/main.js"></script>

@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('welcome1');
 });
 
-Route::get('/certification', function () {
-    return view('layouts.certification.index');
-});
+Route::get('/certification', 'CertificationController@index');
+
+Route::get('/certification/details', 'CertificationController@details');
 
 Auth::routes();
 
