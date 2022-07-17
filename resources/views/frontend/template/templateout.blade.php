@@ -67,7 +67,7 @@
                             <li><a href="#"
                                     class="nav-link scrollto @if (Request::segment(1) == 'tracer') active @endif">Tracer
                                     Study</a></li>
-                            <li><a href="/certification"
+                            <li><a href="{{ route('certificate.front.index') }}"
                                     class="nav-link scrollto @if (Request::segment(1) == 'certification') active @endif">Certification
                                     Acreditations</a></li>
                         </ul>
