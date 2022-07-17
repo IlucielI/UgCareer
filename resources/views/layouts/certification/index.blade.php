@@ -44,7 +44,7 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <main id="main" style="margin-top:100px;">
             <a href="/" class="text-decoration-none backPage"><i class="bi bi-arrow-left-circle"></i> kembali ke
                 Home</a>

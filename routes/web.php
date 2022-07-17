@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome1');
-});
+})->name('home');
 
-Route::get('/certification', 'CertificationController@index');
+Route::get('/certification', 'CertificationController@index')->name('certificate.front.index');
 
 Route::get('/certification/details', 'CertificationController@details');
 
