@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,7 +21,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/homeadmin', 'HomeController@homeadmin')->name('homeadmin');
 Route::resource('alumni', 'App\Http\Controllers\Backend\AlumniController', ['except' => ['show']]);
 Route::resource('company', 'App\Http\Controllers\Backend\CompanyController');
@@ -33,3 +34,8 @@ Route::resource('forums', 'App\Http\Controllers\Backend\ForumsController');
 Route::get('/profile/edit/{id}', 'App\Http\Controllers\Backend\ProfileController@edit')->name('profile.edit');
 Route::put('/profile/update', 'App\Http\Controllers\Backend\ProfileController@update')->name('profile.update');
 Route::put('/profile/password', 'App\Http\Controllers\Backend\ProfileController@password')->name('profile.password');
+
+Route::get('/events', 'Frontend\EventsController@events')->name('events');
+Route::get('/subevent', 'Frontend\EventsController@subevent')->name('subevent');
+Route::get('/eventdetails', 'Frontend\EventsController@eventdetails')->name('eventdetails');
+Route::get('/notfound', 'Frontend\EventsController@notfound')->name('notfound');
