@@ -46,7 +46,8 @@
 @section('content')
     <div class="container" data-aos="fade-up">
         <main id="main" style="margin-top:100px;">
-            <a href="/certification" class="text-decoration-none backPage"><i class="bi bi-arrow-left-circle"></i> kembali
+            <a href="{{ route('certificate.front.index') }}" class="text-decoration-none backPage"><i
+                    class="bi bi-arrow-left-circle"></i> kembali
                 ke
                 Akreditasi</a>
 
