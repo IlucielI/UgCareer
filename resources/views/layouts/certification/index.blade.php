@@ -66,7 +66,8 @@
                         <hr>
                         <p class="fw-bold fs-5">Jurusan</p>
                         <ul class=fikti>
-                            <li><a href="certification/details" class="text-decoration-none">Sistem Informasi</a></li>
+                            <li><a href="{{ route('certificate.front.details') }}" class="text-decoration-none">Sistem
+                                    Informasi</a></li>
                             <li><a href="#" class="text-decoration-none">Sistem Komputer</a></li>
                         </ul>
                     </div>
