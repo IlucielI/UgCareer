@@ -44,63 +44,65 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <main id="main" style="margin-top:100px;">
             <a href="/certification" class="text-decoration-none backPage"><i class="bi bi-arrow-left-circle"></i> kembali
                 ke
                 Akreditasi</a>
-        </main>
 
-        <div class="row mt-4 mb-4">
-            <h4 class="fw-bold">Surat Akreditasi S1 - Jurusan Sistem Informasi</h4>
-        </div>
+            <div class="row mt-4 mb-4">
+                <h4 class="fw-bold">Surat Akreditasi S1 - Jurusan Sistem Informasi</h4>
+            </div>
 
-        <div class="row">
-            {{-- Preview Latest Acreditation Certificate --}}
-            <div class="col-md-8">
-                <div class="card mb-5">
-                    <div class="iframe-container">
-                        <iframe
-                            src="{{ asset('assets') }}/data_file/sertifikat_akreditasi_s1_sistem_informasi_2020-2025.pdf"
-                            frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title fw-bold">Terbaru <br>
-                        </h4>
-                        {{-- <div class="d-flex w-100">
+            <div class="row">
+                {{-- Preview Latest Acreditation Certificate --}}
+                <div class="col-md-8">
+                    <div class="card mb-5">
+                        <div class="iframe-container">
+                            <iframe
+                                src="{{ asset('assets') }}/data_file/sertifikat_akreditasi_s1_sistem_informasi_2020-2025.pdf"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Terbaru <br>
+                            </h4>
+                            {{-- <div class="d-flex w-100">
                             <p class="fw-bold card-title">
                                 Surat Keterangan Akreditasi S1 - Sistem Informasi 2020 - 2025
                                 <span><a href="#" class="btn text-white"
                                         style="background-color: #925FBA;">Download</a></span>
                             </p>
                         </div> --}}
-                        <h5 class="fw-bold card-title">
-                            Surat Keterangan Akreditasi S1 - Sistem Informasi 2020 - 2025
-                        </h5>
-                        <div class="d-flex w-100 justify-content-end">
-                            <a href="#" class="btn text-white" style="background-color: #925FBA;">Download</a>
+                            <h5 class="fw-bold card-title">
+                                Surat Keterangan Akreditasi S1 - Sistem Informasi 2020 - 2025
+                            </h5>
+                            <div class="d-flex w-100 justify-content-end">
+                                <a href="#" class="btn text-white" style="background-color: #925FBA;">Download</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- oldest Acreditation Certification --}}
+                <div class="col-md-4">
+                    <div class="card border-2">
+                        <div class="card-body">
+                            <p class="card-title fw-bold fs-5">Arsip</p>
+                            <ul class=fikti>
+                                <li><a href="#" class="text-decoration-none fw-bold">Surat Keterangan Akreditasi
+                                        S1 - Sistem Informasi 2015 - 2020</a></li>
+                                <li><a href="#" class="text-decoration-none fw-bold">Surat Keterangan Akreditasi
+                                        S1 - Sistem Informasi 2010 - 2015</a></li>
+                                <li><a href="#" class="text-decoration-none fw-bold">Surat Keterangan Akreditasi
+                                        S1 - Sistem Informasi 2005 - 2010</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </main>
 
-            {{-- oldest Acreditation Certification --}}
-            <div class="col-md-4">
-                <div class="card border-2">
-                    <div class="card-body">
-                        <p class="card-title fw-bold fs-5">Arsip</p>
-                        <ul class=fikti>
-                            <li><a href="#" class="text-decoration-none fw-bold">Surat Keterangan Akreditasi
-                                    S1 - Sistem Informasi 2015 - 2020</a></li>
-                            <li><a href="#" class="text-decoration-none fw-bold">Surat Keterangan Akreditasi
-                                    S1 - Sistem Informasi 2010 - 2015</a></li>
-                            <li><a href="#" class="text-decoration-none fw-bold">Surat Keterangan Akreditasi
-                                    S1 - Sistem Informasi 2005 - 2010</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 @endsection
 

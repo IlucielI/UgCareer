@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 Route::get('/certification', 'CertificationController@index')->name('certificate.front.index');
 
-Route::get('/certification/details', 'CertificationController@details');
+Route::get('/certification/details', 'CertificationController@details')->name('certificate.front.details');
 
 Auth::routes();
 
