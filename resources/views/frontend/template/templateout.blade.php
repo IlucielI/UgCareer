@@ -52,12 +52,11 @@
                             href="{{ route('home') }}">Home</a></li>
                     <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif" href="#about">Find
                             Jobs</a></li>
-                    <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif"
-<<<<<<< HEAD
+                    <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif" <<<<<<< HEAD
                             href="{{ url('/events') }}">Events</a></li>
-=======
-                            href="#services">Events</a></li>
->>>>>>> 6989e30473ee175459ca81f0f8ede56290c306f5
+                    =======
+                    href="#services">Events</a></li>
+                    >>>>>>> 6989e30473ee175459ca81f0f8ede56290c306f5
                     <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif"
                             href="#portfolio">News</a></li>
                     <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif"
@@ -123,11 +122,7 @@
     @yield('content')
 
     <!-- ======= Footer ======= -->
-<<<<<<< HEAD
-    <footer id="footer">
-=======
     <footer id="footer" class="">
->>>>>>> 6989e30473ee175459ca81f0f8ede56290c306f5
         <div class="container">
             <div class="col-lg-12 text-lg-left text-center">
                 <div class="copyright">
