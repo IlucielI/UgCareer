@@ -74,10 +74,10 @@
                                         style="background-color: #925FBA;">Download</a></span>
                             </p>
                         </div> --}}
-                            <h5 class="fw-bold card-title">
-                                Surat Keterangan Akreditasi S1 - Sistem Informasi 2020 - 2025
-                            </h5>
-                            <div class="d-flex w-100 justify-content-end">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="fw-bold card-title">
+                                    Surat Keterangan Akreditasi S1 - Sistem Informasi 2020 - 2025
+                                </h5>
                                 <a href="#" class="btn text-white" style="background-color: #925FBA;">Download</a>
                             </div>
                         </div>

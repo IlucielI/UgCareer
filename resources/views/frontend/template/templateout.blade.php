@@ -53,7 +53,7 @@
                     <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif" href="#about">Find
                             Jobs</a></li>
                     <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif"
-                            href="#services">Events</a></li>
+                            href="{{ url('/events') }}">Events</a></li>
                     <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif"
                             href="#portfolio">News</a></li>
                     <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif"
@@ -119,7 +119,7 @@
     @yield('content')
 
     <!-- ======= Footer ======= -->
-    <footer id="footer" class="">
+    <footer id="footer">
         <div class="container">
             <div class="col-lg-12 text-lg-left text-center">
                 <div class="copyright">
