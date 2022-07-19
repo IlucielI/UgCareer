@@ -19,9 +19,15 @@ Route::get('/', function () {
     return view('welcome1');
 })->name('home');
 
+// Certification Routes
 Route::get('certification', 'Frontend\CertificationController@index')->name('certificate.front.index');
 
 Route::get('certification/details', 'Frontend\CertificationController@details')->name('certificate.front.details');
+// End Certification Routes
+
+// Forum Routes
+Route::get('forum', 'Frontend\ForumController@index')->name('forum.front.index');
+// End Forum Routes
 
 Auth::routes();
 

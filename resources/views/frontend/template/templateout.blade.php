@@ -52,16 +52,13 @@
                             href="{{ route('home') }}">Home</a></li>
                     <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif" href="#about">Find
                             Jobs</a></li>
-                    <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif" <<<<<<< HEAD
+                    <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif"
                             href="{{ url('/events') }}">Events</a></li>
-                    =======
-                    href="#services">Events</a></li>
-                    >>>>>>> 6989e30473ee175459ca81f0f8ede56290c306f5
                     <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif"
                             href="#portfolio">News</a></li>
                     <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif"
-                            href="#portfolio">Forums</a></li>
-                    <li><a class="nav-link scrollto @if (Request::segment(1) == '') active @endif"
+                            href="{{ route('forum.front.index') }}">Forums</a></li>
+                    <li><a class="nav-link scrollto @if (Request::segment(1) == 'forum') active @endif"
                             href="#contact">Contact</a></li>
                     <li class="dropdown"><a href="#"
                             class="nav-link scrollto @if (Request::segment(1) == 'certification') active @endif"><span>About</span>

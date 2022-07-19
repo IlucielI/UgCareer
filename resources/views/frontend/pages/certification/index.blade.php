@@ -44,85 +44,100 @@
 @endsection
 
 @section('content')
-    <div class="container" data-aos="fade-up">
-        <main id="main" style="margin-top:100px;">
+
+    {{-- Surat Akreditasi Section --}}
+    <main id="main">
+
+        <div class="container justify-content-between align-items-center" style="margin-top: 100px;">
             <a href="/" class="text-decoration-none backPage"><i class="bi bi-arrow-left-circle"></i> kembali ke
                 Home</a>
-        </main>
-
-        <div class="row mt-4 mb-4">
-            <h4 class="fw-bold">Surat Keterangan Akreditasi (JENJANG PENDIDIKAN)</h4>
         </div>
 
-        {{-- List Jurusan --}}
-        <div class="row mt-4 jurusan">
-            <div class="col-md-7">
-                <div class="card rounded mb-4 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold fikti">Fakultas Ilmu Komputer dan Teknologi
-                            Informasi
-                            (FIKTI)
-                        </h5>
-                        <hr>
-                        <p class="fw-bold fs-5">Jurusan</p>
-                        <ul class=fikti>
-                            <li><a href="{{ route('certificate.front.details') }}" class="text-decoration-none">Sistem
-                                    Informasi</a></li>
-                            <li><a href="#" class="text-decoration-none">Sistem Komputer</a></li>
-                        </ul>
-                    </div>
+        <section id="blog" class="blog">
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <h4 class="fw-bold">Surat Keterangan Akreditasi (JENJANG PENDIDIKAN)</h4>
                 </div>
-                <div class="card mb-4 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold fti">Fakultas Teknologi Industri
-                            (FTI)
-                        </h5>
-                        <hr>
-                        <p class="fw-bold fs-5">Jurusan</p>
-                        <ul class="fti">
-                            <li><a href="#" class="text-decoration-none">Teknologi Informatika</a></li>
-                            <li><a href="#" class="text-decoration-none">Teknik Elektro</a></li>
-                            <li><a href="#" class="text-decoration-none">Teknik Industri</a></li>
-                            <li><a href="#" class="text-decoration-none">Teknik Mesin</a></li>
-                            <li><a href="#" class="text-decoration-none">Agroteknologi</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card mb-4 shadow">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold fe">Fakultas Ekonomi
-                            (FE)
-                        </h5>
-                        <hr>
-                        <p class="fw-bold fs-5">Jurusan</p>
-                        <ul class="fe">
-                            <li><a href="#" class="text-decoration-none">Manajemen</a></li>
-                            <li><a href="#" class="text-decoration-none">Akuntansi</a></li>
-                            <li><a href="#" class="text-decoration-none">Ekonomi Syariah</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            {{-- End List Jurusan --}}
 
-            {{-- Search Bar Jurusan --}}
-            <div class="col-md-5">
-                <div class="card border-2">
-                    <div class="card-body">
-                        <form action="#" method="get">
-                            @csrf
-                            <h5 class="fw-bold mb-3">Search</h5>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control">
-                                <span class="input-group-text" id="basic-addon2"><i class="bi bi-search"></i></span>
+                {{-- List Jurusan Section --}}
+                <div class="row mt-4 jurusan">
+                    <div class="col-lg-8">
+                        <div class="card rounded mb-4 shadow">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fikti">Fakultas Ilmu Komputer dan Teknologi
+                                    Informasi
+                                    (FIKTI)
+                                </h5>
+                                <hr>
+                                <p class="fw-bold fs-5">Jurusan</p>
+                                <ul class=fikti>
+                                    <li><a href="{{ route('certificate.front.details') }}"
+                                            class="text-decoration-none">Sistem
+                                            Informasi</a></li>
+                                    <li><a href="#" class="text-decoration-none">Sistem Komputer</a></li>
+                                </ul>
                             </div>
-                        </form>
+                        </div>
+                        <div class="card mb-4 shadow">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fti">Fakultas Teknologi Industri
+                                    (FTI)
+                                </h5>
+                                <hr>
+                                <p class="fw-bold fs-5">Jurusan</p>
+                                <ul class="fti">
+                                    <li><a href="#" class="text-decoration-none">Teknologi Informatika</a></li>
+                                    <li><a href="#" class="text-decoration-none">Teknik Elektro</a></li>
+                                    <li><a href="#" class="text-decoration-none">Teknik Industri</a></li>
+                                    <li><a href="#" class="text-decoration-none">Teknik Mesin</a></li>
+                                    <li><a href="#" class="text-decoration-none">Agroteknologi</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card mb-4 shadow">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold fe">Fakultas Ekonomi
+                                    (FE)
+                                </h5>
+                                <hr>
+                                <p class="fw-bold fs-5">Jurusan</p>
+                                <ul class="fe">
+                                    <li><a href="#" class="text-decoration-none">Manajemen</a></li>
+                                    <li><a href="#" class="text-decoration-none">Akuntansi</a></li>
+                                    <li><a href="#" class="text-decoration-none">Ekonomi Syariah</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
+                    {{-- End List Jurusan --}}
+
+                    {{-- Sidebar Jurusan --}}
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <div class="sidebar-item search-form">
+                                <h3 class="sidebar-title">Search</h3>
+                                <form action="" class="mt-3">
+                                    <input type="text">
+                                    <button type="submit"><i class="bi bi-search"></i></button>
+                                </form>
+                            </div><!-- End sidebar search formn-->
+
+                            <div class="sidebar-item categories">
+                                <h3 class="sidebar-title">Fakultas</h3>
+                                <ul class="mt-3">
+                                    <li><a href="#">Fakultas Ilmu Komputer dan Teknologi Informasi (FIKTI)
+                                            <span>(2)</span></a></li>
+                                    <li><a href="#">Fakultas Teknologi Industri (FTI) <span>(5)</span></a></li>
+                                    <li><a href="#">Fakultas Ekonomi (FE) <span>(3)</span></a></li>
+                                </ul>
+                            </div><!-- End sidebar categories-->
+                        </div>
+                    </div>
+                    {{-- End Sidebar Jurusan --}}
                 </div>
             </div>
-            {{-- End Search Bar Jurusan --}}
-        </div>
-    </div>
+        </section>
+    </main>
 @endsection
 
 <div id="myModal" class="modalcustom">
