@@ -19,15 +19,9 @@ Route::get('/', function () {
     return view('welcome1');
 })->name('home');
 
-<<<<<<< HEAD
 Route::get('certification', 'Frontend\CertificationController@index')->name('certificate.front.index');
 
 Route::get('certification/details', 'Frontend\CertificationController@details')->name('certificate.front.details');
-=======
-Route::get('/certification', 'CertificationController@index')->name('certificate.front.index');
-
-Route::get('/certification/details', 'CertificationController@details')->name('certificate.front.details');
->>>>>>> 6989e30473ee175459ca81f0f8ede56290c306f5
 
 Auth::routes();
 
