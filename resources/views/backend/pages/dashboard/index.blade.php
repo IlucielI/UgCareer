@@ -1,4 +1,4 @@
-@extends('backend.partials.app', ['title' => __('Home')])
+@extends('backend.partials.app', ['title' => __('Home'), 'navLink' => 'dashboard'])
 @push('pluginscss')
 <link rel="stylesheet" href="{{ asset('backend') }}/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
 <link rel="stylesheet" href="{{ asset('backend') }}/vendors/ti-icons/css/themify-icons.css">
